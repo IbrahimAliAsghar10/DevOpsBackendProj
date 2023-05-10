@@ -4,8 +4,9 @@
   "description": "This is a simple Node.js backend using Express that exposes an API endpoint to retrieve data. The API endpoint /api/data returns an array of data as a JSON response. This project is intended for devops Project. It includes basic error handling and can be easily extended to include additional API endpoints or connect to a database.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "npm test"
+    "start": "node ./src/index.js",
+    "test": "npm test",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,9 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.1"
   }
 }
