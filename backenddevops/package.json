@@ -1,0 +1,26 @@
+{
+  "name": "backenddevops",
+  "version": "1.0.0",
+  "description": "This is a simple Node.js backend using Express that exposes an API endpoint to retrieve data. The API endpoint /api/data returns an array of data as a JSON response. This project is intended for devops Project. It includes basic error handling and can be easily extended to include additional API endpoints or connect to a database.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IbrahimAliAsghar10/DevOpsBackendProj.git"
+  },
+  "keywords": [
+    "\"devops\"",
+    "\"backend\""
+  ],
+  "author": "Ibrahim Ali Asghar",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/IbrahimAliAsghar10/DevOpsBackendProj/issues"
+  },
+  "homepage": "https://github.com/IbrahimAliAsghar10/DevOpsBackendProj#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
