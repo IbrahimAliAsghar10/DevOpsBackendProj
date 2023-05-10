@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-
+const cors = require('cors');
+app.use(cors());
 const data = [
   { id: 1, name: 'John', age: 25 },
   { id: 2, name: 'Jane', age: 30 },
@@ -8,7 +9,7 @@ const data = [
 ];
 
 app.get('/api/data', (req, res) => {
-  res.json(data);
+  res.status(200).json(data);
 });
 
 app.listen(3001, () => {
