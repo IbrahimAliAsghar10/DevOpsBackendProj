@@ -4,6 +4,7 @@ const app = express();
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
+const port = process.env.PORT || 3001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
@@ -52,7 +53,7 @@ app.post('/login', (req, res) => {
   
 });
 
-app.listen(3001, () => {
-  console.log('Server is running on port 3001');
+app.listen(port, () => {
+  console.log('Server is running on port',port);
 });
 module.exports = app;
